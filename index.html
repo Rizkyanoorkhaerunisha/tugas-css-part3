@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product-card {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            font-size: 14px;
+            position: relative;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 10px;
+        }
+
+        .badge-local {
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            padding: 3px 7px;
+            font-size: 12px;
+            border-radius: 0 0 40px 0;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .product-discount {
+            font-size: 12px;
+            text-decoration: line-through;
+            color: #757575;
+        }
+
+        .product-discount-percentage {
+            font-size: 12px;
+            color: #ff1e1e;
+        }
+
+        .product-location {
+            font-size: 12px;
+            color: #757575;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .product-location i {
+            margin-right: 5px;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .rating .star {
+            color: gold;
+            margin-right: 5px;
+        }
+
+        .rating span {
+            font-size: 0.9em;
+            color: #222222;
+        }
+
+        /* Membuat bintang dengan border hitam */
+        .star {
+            position: relative;
+            display: inline-block;
+            color: gold;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .star:before {
+            content: '★';
+            color: gold;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .star:after {
+            content: '★';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            color: black;
+            /* Warna hitam sebagai border */
+            z-index: -1;
+        }
+
+        /* Menghubungkan badge "Beli Lokal" dengan gambar */
+        .badge-local {
+            position: relative;
+            top: -20px;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-card">
+        <img src="latiao.jpg" alt="Kopi Robusta Gayo">
+        <div class="product-info">
+            <div class="badge-local">Beli Lokal</div>
+            <h2 class="product-title">Latiao Gluten Spicy, Aneka Rasa Macam Makanan Pedas Dari China Halal</h2>
+            <p class="product-price">Rp26.280</p>
+            <p class="product-discount">Rp48.800</p>
+            <p class="product-discount-percentage">Diskon 40%</p>
+            <div class="product-location">
+                <input type="checkbox" id="terms">
+                <label for="terms"></label><i class="fas fa-map-marker-alt"></i> Kota Jakarta Barat
+            </div>
+            <div class="product-rating">
+                <div class="star"></div>
+                <span>4.8 | 10RB+ terjual</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
